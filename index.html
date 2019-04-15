@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+ </head>
+  <body>
+    <style media="screen">
+     body {background-color: powderblue;}
+     h1 {font-family: monospace;}
+    </style>
+
+    <h1>Hello there! Please enter the password!</h1>
+    Password: <input id ="pwd" type="password" name="pwd"><br>
+    <input type="button" onclick="myFunction()" value="Submit"> 
+
+      <script>
+        function myFunction() {
+        var check = "guess";
+        var inp = document.getElementById("pwd").value;
+        if (check == inp) {
+            alert("Correct!");
+      } else {
+            alert("Incorrect!");
+      }
+      }
+      </script>
+
+  </body>
+</html>
